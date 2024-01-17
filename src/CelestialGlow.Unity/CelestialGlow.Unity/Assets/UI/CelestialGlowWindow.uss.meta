@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 2bda6bba35f4beb4d9b06398b1177a55
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: celestialglow.bundle
+  assetBundleVariant: 
+  script: {fileID: 12385, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0

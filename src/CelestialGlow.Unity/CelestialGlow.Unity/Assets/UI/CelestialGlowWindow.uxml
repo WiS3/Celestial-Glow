@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/CelestialGlowWindow.uss?fileID=7433441132597879392&amp;guid=2bda6bba35f4beb4d9b06398b1177a55&amp;type=3#CelestialGlowWindow" />
+    <Style src="project://database/Assets/UI/BodiesHeader.uss?fileID=7433441132597879392&amp;guid=c190b35f467c94f4e9405e18ac5a4771&amp;type=3#BodiesHeader" />
+    <ui:VisualElement class="root" style="padding-left: 4px; padding-right: 4px; padding-top: 4px; padding-bottom: 4px; max-width: 400px; max-height: 600px; flex-shrink: 1; overflow: hidden; align-self: stretch; justify-content: flex-start; align-items: stretch; flex-grow: 0;">
+        <ui:VisualElement name="title-bar" style="margin-top: 0; margin-bottom: 5px; align-items: center; justify-content: space-around; align-self: stretch; flex-grow: 0; flex-direction: row; flex-shrink: 0;">
+            <ui:VisualElement name="icon" style="flex-grow: 0; flex-shrink: 0; width: 20px; height: 20px; background-image: url(&apos;project://database/Assets/Images/icon.png?fileID=21300000&amp;guid=7ed5cdb1dc1b4730bdb0f8096d09dd9d&amp;type=3#icon&apos;); padding-right: 0; margin-right: 0; margin-left: 2px;" />
+            <ui:Label text="Celestial Glow" name="title" style="font-size: 18px; -unity-font-definition: url(&apos;project://database/Packages/uitkforksp2.controls/Assets/Theme/Fonts/LEDCounter7/led_counter-7%20SDF.asset?fileID=11400000&amp;guid=33e1e97b69ec355479ba49006381fc06&amp;type=2#led_counter-7 SDF&apos;); align-self: auto; margin-left: 8px;" />
+            <ui:VisualElement name="buttons" style="flex-grow: 1; flex-direction: row; justify-content: flex-end;">
+                <ui:Button text="A" name="toggle-advanced-settings-button" tooltip="Advanced Mode" class="cg-button" style="display: none;" />
+                <ui:Button text="×" name="close-button" class="cg-button" style="flex-wrap: nowrap;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="content" style="background-color: rgba(0, 0, 0, 0); overflow: hidden; flex-shrink: 1; flex-grow: 1; align-self: stretch; justify-content: flex-start; align-items: stretch;">
+            <ui:Foldout text="Global Settings" name="global-settings" style="align-items: stretch; justify-content: flex-start; align-self: stretch; flex-shrink: 0; flex-grow: 0; display: flex;">
+                <ui:Slider picking-mode="Ignore" value="42" high-value="3" show-input-field="true" direction="Horizontal" name="ambient-intensity-slider" label="Ambient Intensity" />
+                <ui:Slider picking-mode="Ignore" value="42" high-value="3" show-input-field="true" direction="Horizontal" name="global-day-intensity-slider" label="Day Intensity" />
+                <ui:Slider picking-mode="Ignore" value="42" high-value="3" show-input-field="true" direction="Horizontal" name="global-night-intensity-slider" label="Night Intensity" />
+                <ui:Slider picking-mode="Ignore" value="42" high-value="1" show-input-field="true" direction="Horizontal" name="global-scaled-intensity-slider" label="Scaled Intensity" />
+            </ui:Foldout>
+            <ui:Foldout text="Bodies Settings" name="bodies-settings" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

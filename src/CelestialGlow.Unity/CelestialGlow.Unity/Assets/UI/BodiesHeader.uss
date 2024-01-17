@@ -1,0 +1,16 @@
+.jool	> Toggle { background-image: url("project://database/Assets/Images/jool.png"); }
+.eve	> Toggle { background-image: url("project://database/Assets/Images/eve.png"); }
+.kerbin > Toggle { background-image: url("project://database/Assets/Images/kerbin.png"); }
+.mun	> Toggle { background-image: url("project://database/Assets/Images/mun.png"); }
+.minmus > Toggle { background-image: url("project://database/Assets/Images/minmus.png"); }
+.ike	> Toggle { background-image: url("project://database/Assets/Images/ike.png"); }
+.dres	> Toggle { background-image: url("project://database/Assets/Images/dres.png"); }
+.vall	> Toggle { background-image: url("project://database/Assets/Images/vall.png"); }
+.pol	> Toggle { background-image: url("project://database/Assets/Images/pol.png"); }
+.eeloo	> Toggle { background-image: url("project://database/Assets/Images/eeloo.png"); }
+.laythe	> Toggle { background-image: url("project://database/Assets/Images/laythe.png"); }
+.gilly	> Toggle { background-image: url("project://database/Assets/Images/gilly.png"); }
+.duna	> Toggle { background-image: url("project://database/Assets/Images/duna.png"); }
+.tylo	> Toggle { background-image: url("project://database/Assets/Images/tylo.png"); }
+.moho	> Toggle { background-image: url("project://database/Assets/Images/moho.png"); }
+.bop	> Toggle { background-image: url("project://database/Assets/Images/bop.png"); }

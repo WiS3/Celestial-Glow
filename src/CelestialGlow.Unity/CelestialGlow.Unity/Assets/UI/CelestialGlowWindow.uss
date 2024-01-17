@@ -1,0 +1,122 @@
+.root {
+    max-width: 600px;
+    max-height: 400px;
+    background-color: #16181A;
+    background-image: url("project://database/Assets/Images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    border-color: #101214;
+}
+
+#title-bar {
+    justify-content: space-between;
+}
+
+.cg-button {
+    width: 24px;
+    height:24px;
+    padding: 0px;
+    margin: 0;
+    background-color: transparent;
+    border-width: 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#toggle-advanced-settings-button {
+    margin-right: 2px;
+}
+#toggle-advanced-settings-button:hover {
+    color: rgba(0, 125, 255, 0.5);
+}
+
+#close-button {
+    font-size: 24px;
+    padding-bottom: 2px;
+}
+#close-button:hover {
+    color: rgba(200, 20, 20, 1);
+}
+
+#global-settings {
+    border-width: 0;
+    background-color: rgba(5,8,12,0.6);
+    margin: 0px 0px 5px 0px;
+}
+#global-settings > Toggle {
+    background-color: transparent;
+}
+#global-settings > Toggle:hover {
+    background-color: rgba(0,60,120, 0.75);
+}
+#global-settings > Toggle:checked {
+    background-color: rgba(0,60,120, 1);
+}
+
+#bodies-settings {
+    border-width: 0;
+    background-color: rgba(5,8,12,0.6);
+    overflow: hidden;
+}
+#bodies-settings > Toggle {
+    background-color: transparent;
+}
+#bodies-settings > Toggle:hover {
+    background-color: rgba(120,60,0, 0.75);
+}
+#bodies-settings > Toggle:checked {
+    background-color: rgba(120,60,0, 1);
+}
+
+.unity-foldout > Toggle > VisualElement > Label {
+    color: rgba(255,255,255, 0.5);
+}
+.unity-foldout > Toggle:hover > VisualElement > Label {
+    color: rgba(255,255,255, 0.75);
+}
+.unity-foldout > Toggle:checked > VisualElement > Label {
+    color: rgba(255,255,255, 1);
+}
+
+
+.unity-list-view__item,
+.unity-list-view__item:hover,
+.unity-list-view__item--selected:hover {
+    background-color: transparent;
+}
+
+CustomFoldout {
+    border-width: 0;
+    border-color: red;
+    background-color: transparent;
+}
+
+CustomFoldout > #unity-content {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+CustomFoldout > Toggle > Toggle {
+    align-items: center;
+    font-size: 12px;
+}
+
+CustomFoldout > Toggle > Toggle > Label {
+    min-width:120px;
+}
+
+Slider {
+    align-items: center;
+    font-size: 12px;
+    height:40px;
+}
+
+Slider > VisualElement {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+#bodies-settings > #unity-content {
+    padding: 2px;
+    margin: 0;
+}
