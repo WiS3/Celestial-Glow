@@ -28,7 +28,6 @@ public class CelestialGlowWindowController : MonoBehaviour
     private Slider _globalAmbientNightIntensity;
     private Slider _globalAmbientScaledIntensity;
 
-    //private Button _showAdvancedSettings;
     private Button _closeButton;
 
     public ListView celestialBodySettingsListView;
@@ -134,7 +133,6 @@ public class CelestialGlowWindowController : MonoBehaviour
                 var i = (int)ambientDaySlider.userData;
                 var bodySettings = CelestialGlowPlugin.Instance.bodySettingsList[i];
                 bodySettings.ambientDayIntensity = evt.newValue;
-                //_LOGGER.LogInfo($"Changed ambientDayIntensity value for body {bodySettings.name}");
                 CelestialGlowPlugin.Instance.UpdateBodyAmbientLighting(bodySettings);
             });
             ambientNightSlider.RegisterValueChangedCallback(evt =>
@@ -142,7 +140,6 @@ public class CelestialGlowWindowController : MonoBehaviour
                 var i = (int)ambientNightSlider.userData;
                 var bodySettings = CelestialGlowPlugin.Instance.bodySettingsList[i];
                 bodySettings.ambientNightIntensity = evt.newValue;
-                //_LOGGER.LogInfo($"Changed ambientNightIntensity value for body {bodySettings.name}");
                 CelestialGlowPlugin.Instance.UpdateBodyAmbientLighting(bodySettings);
             });
             ambientScaledSlider.RegisterValueChangedCallback(evt =>
@@ -150,7 +147,6 @@ public class CelestialGlowWindowController : MonoBehaviour
                 var i = (int)ambientScaledSlider.userData;
                 var bodySettings = CelestialGlowPlugin.Instance.bodySettingsList[i];
                 bodySettings.ambientScaledIntensity = evt.newValue;
-                //_LOGGER.LogInfo($"Changed ambientScaledIntensity value for body {bodySettings.name}");
                 CelestialGlowPlugin.Instance.UpdateBodyAmbientLighting(bodySettings);
             });
             return bodySettingsVisualElement;
@@ -194,23 +190,19 @@ public class CelestialGlowWindowController : MonoBehaviour
 
     private void OnAmbientIntensityChangedEvent(ChangeEvent<float> evt)
     {
-        //_LOGGER.LogInfo($"AmbientIntensity value changed. Old value: {evt.previousValue}, new value: {evt.newValue}");
         CelestialGlowPlugin.Instance.SetAmbientIntensity(evt.newValue);
     }
 
     private void OnGlobalDayIntensityChangedEvent(ChangeEvent<float> evt)
     {
-        //_LOGGER.LogInfo($"GlobalDayIntensity value changed. Old value: {evt.previousValue}, new value: {evt.newValue}");
         CelestialGlowPlugin.Instance.SetGlobalAmbientDayIntensity(evt.newValue);
     }
     private void OnGlobalNightIntensityChangedEvent(ChangeEvent<float> evt)
     {
-        //_LOGGER.LogInfo($"GlobalNightIntensity value changed. Old value: {evt.previousValue}, new value: {evt.newValue}");
         CelestialGlowPlugin.Instance.SetGlobalAmbientNightIntensity(evt.newValue);
     }
     private void OnGlobalScaledIntensityChangedEvent(ChangeEvent<float> evt)
     {
-        //_LOGGER.LogInfo($"GlobalScaledIntensity value changed. Old value: {evt.previousValue}, new value: {evt.newValue}");
         CelestialGlowPlugin.Instance.SetGlobalAmbientScaledIntensity(evt.newValue);
     }
 }

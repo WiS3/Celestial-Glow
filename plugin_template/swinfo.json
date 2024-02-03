@@ -5,8 +5,8 @@
   "name": "Celestial Glow",
   "description": "A simple KSP2 mod to change ambient lighting",
   "source": "https://github.com/WiS3/Celestial-Glow",
-  "version": "0.1.0",
-  "version_check": "https://raw.githubusercontent.com/WiS3/Celestial-Glow/main/plugin_template/swinfo.json",
+  "version": "0.1.2",
+  "version_check": "https://raw.githubusercontent.com/WiS3/Celestial-Glow/master/plugin_template/swinfo.json",
   "ksp2_version": {
     "min": "0.2.0",
     "max": "*"
